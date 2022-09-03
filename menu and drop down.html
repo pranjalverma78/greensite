@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+        .tbox::before{
+            background-image: url(http://advocate.jbu.edu/wp-content/uploads/istockphoto-1285342239-170667a.jpeg);
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .tbox {
+            background-color: rgb(12, 144, 12);
+            padding: 15px;
+
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+
+
+
+        }
+
+        nav ul li a {
+            /* margin: 0px 55px; */
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            height: 100px;
+            width: 100px;
+            padding-left: 6px;
+
+        }
+
+        nav ul li {
+            /* padding: 10px 35px; */
+            text-align: center;
+            padding-top: 7px;
+            margin-right: 45px;
+            height: 50px;
+            width: 150px;
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+            border-radius: 10px;
+
+        }
+
+        nav ul li:hover {
+            background-color: rgb(17, 101, 17);
+        }
+
+        .fa-solid {
+            margin-right: 4px;
+            font-size: 20px;
+            color: white;
+        }
+        .menu-1{
+            background-color: rgb(12, 144, 12);
+            margin-top: 15px;
+            margin-left: 15px;
+            width: 150px;
+            border-radius: 10px;
+            border: 3px solid rgb(17, 101, 17);
+            display: none;
+            padding: 15px;
+            padding-bottom: 4px;
+
+        }
+        .menu-1 :hover .menu-1{
+            display: block;
+        }
+
+        nav ul li:hover .menu-1{
+            display: block;
+        }
+
+        .menu-1 ul{
+            flex-direction: column;
+            
+        }
+        .menu-1 ul li{
+            border-bottom: 2px solid white;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+
+        .menu-1-last{
+            background-color: rgb(12, 144, 12);
+            margin-top: 15px;
+            margin-left: 100px;
+            width: 150px;
+            border-radius: 10px;
+            border: 3px solid rgb(17, 101, 17);
+            display: none;
+
+        }
+        .menu-1-last:hover .menu-1-last{
+            display: block;
+        }
+
+        .menu-1 ul li:last-child:hover .menu-1-last{
+            display: block;
+        }
+
+        .menu-1-last:hover .menu-1-last{
+            display: block;
+        }
+
+        .menu-1-last ul{
+            flex-direction: column;
+
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+        .menu-1-last ul li{
+            border-bottom: 2px solid white;
+            border-radius: 0px;
+            width: 130px;
+            margin: auto;
+            border-radius: 5px;
+            margin-top: 0px;
+        }
+        .menu-1-last ul li:last-child{
+            border-bottom: none;
+        }
+
+        .menu-2{
+            background-color: rgb(12, 144, 12);
+            margin-top: 15px;
+            margin-left: 15px;
+            width: 150px;
+            border-radius: 10px;
+            border: 3px solid rgb(17, 101, 17);
+            display: none;
+            padding: 15px;
+            padding-bottom: 4px;
+            width: 170px;
+
+        }
+        .menu-2 :hover .menu-2{
+            display: block;
+        }
+
+        nav ul li:hover .menu-2{
+            display: block;
+        }
+
+        .menu-2 ul{
+            flex-direction: column;
+            
+        }
+        .menu-2 ul li{
+            border-bottom: 2px solid white;
+            border-radius: 5px;
+            text-align: left;
+            width: 170px;
+        }
+        .menu-2 ul li:last-child{
+            border-bottom: none;
+        }
+
+        .menu-2-last{
+            background-color: rgb(12, 144, 12);
+            margin-top: 15px;
+            margin-left: 100px;
+            width: 150px;
+            border-radius: 10px;
+            border: 3px solid rgb(17, 101, 17);
+            display: none;
+
+        }
+        .menu-2-last:hover .menu-2-last{
+            display: block;
+        }
+
+        .menu-2 ul li:last-child:hover .menu-2-last{
+            display: block;
+        }
+
+        .menu-2-last:hover .menu-2-last{
+            display: block;
+        }
+
+        .menu-2-last ul{
+            flex-direction: column;
+
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+        .menu-2-last ul li{
+            border-bottom: 2px solid white;
+            border-radius: 0px;
+            width: 130px;
+            margin: 4px auto;
+            border-radius: 5px;
+            margin-top: 0px;
+        }
+        .menu-2-last ul li:last-child{
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tbox">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-group"></i>About Us</a>
+                        <div class="menu-1">
+                            <ul>
+                                <li><a href="#">Mission</a></li>
+                                <li><a href="#">Vision</a></li>
+                                <li><a href="#" class="team">Team<i class="fa-solid fa-greater-than" style="margin-left: 60px;"></i></a>
+                                    <div class="menu-1-last">
+                                        <ul>
+                                            <li><a href="#">Research</a></li>
+                                            <li><a href="#">Design</a></li>
+                                            <li><a href="#">Marketing</a></li>
+                                        </ul>
+                                    </div></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Services</a>
+                        <div class="menu-2">
+                            <ul>
+                                <li><a href="#">Web Designing</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#" class="team">Mobile App<i class="fa-solid fa-greater-than" style="margin-left: 20px;"></i></a>
+                                    <div class="menu-2-last">
+                                        <ul>
+                                            <li><a href="#">Android</a></li>
+                                            <li><a href="#">IOS</a></li>
+                                            <li><a href="#">Palm OS</a></li>
+                                        </ul>
+                                    </div></li>
+                            </ul>
+                        </div></li>
+                    <li><a href="#"><i class="fa-solid fa-people-arrows-left-right"></i>Clients</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
